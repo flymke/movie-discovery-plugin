@@ -1,0 +1,173 @@
+/* This stylesheet is used to style the public-facing components of the plugin. */
+
+.movie-discovery {
+    width:100%;
+}
+
+.movie-discovery img {
+    max-width:100%;
+}
+
+.movie-discovery * {
+    font-family:arial !important;
+    font-size:13px !important;
+}
+
+
+.movie-discovery span {
+    display:block;
+}
+
+.movie-discovery div.md-inner {
+    width:200px;
+}
+
+.movie-discovery div.md-content {
+    padding:10px;
+    position:relative;
+    cursor:pointer;
+}
+
+.movie-discovery div.md-overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(255,255,255,.85);
+    -webkit-transition: 300ms linear;  /* Chrome 1-25, Safari 3.2+ */
+    -moz-transition: 300ms linear;  /* Firefox 4-15 */
+    -o-transition: 300ms linear;  /* Opera 10.50Ð12.00 */
+    transition: 300ms linear;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+}
+
+.movie-discovery div.md-content:hover div.md-overlay {
+    opacity:1 !important;
+}
+
+.movie-discovery span.md-overlay-inner {
+    margin:15px;
+}
+
+.movie-discovery h2.md-title {
+    font-weight:bold;
+    font-family:arial;
+    font-size:22px;
+    line-height:normal;
+    margin:25px 0 5px 0;
+    padding:0;
+    text-decoration:none;
+    color:#000;
+}
+
+.movie-discovery p.md-desc {
+    font-weight:normal;
+    font-family:arial;
+    font-size:13px;
+    line-height:16px;
+    margin:0 0 5px 0;
+    padding:0;
+    text-decoration:none;
+    color:#555;
+}
+
+.movie-discovery .md-buy {
+    font-weight:normal;
+    font-family:arial;
+    font-size:13px;
+    line-height:16px;
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    color:#555;
+    background:url(http://www.movie-discovery.com/images/movie-discovery-logo.png) right center no-repeat;
+    background-size:75px auto;
+}
+
+.md-buy-now-title {
+    font-weight:bold;
+    font-family:arial;
+    font-size:18px;
+    line-height:normal;
+    margin:0 0 5px 0;
+    padding:0;
+    text-decoration:none;
+    color:#454545;  
+}
+
+a.md-btn {
+    width:75%;
+    margin:15px auto 5px;
+    text-align:center;
+    font-weight:bold;
+    font-family:arial;
+    font-size:16px;
+    height:22px;
+    line-height:22px;
+    padding:0;
+    text-decoration:none;
+    color:#197a48;
+    background:#a2c23b;
+    display:block;
+    text-transform:uppercase;
+    -webkit-border-radius:5px; /* WebKit */
+    -moz-border-radius:5px; /* Firefox */
+    border-radius:5px; /* Standard */
+    cursor:pointer;
+    border:1px solid transparent;
+}
+
+a.md-btn:hover {
+    color:#000;
+    background:#a2c23b;
+    text-decoration:none;
+    border:1px solid #555;
+}
+
+.md-powered-by {
+    text-align:center;
+}
+
+.md-powered-by a {
+    font-family:arial;
+    font-size:11px;
+    line-height:normal;
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    color:#555;
+
+}
+
+.md-powered-by a:hover {
+    font-family:arial;
+    font-size:11px;
+    line-height:normal;
+    margin:0;
+    padding:0;
+    text-decoration:underline;
+    color:#888;
+}
+
+.md-trans {
+    -webkit-transition: 100ms linear;  /* Chrome 1-25, Safari 3.2+ */
+    -moz-transition: 100ms linear;  /* Firefox 4-15 */
+    -o-transition: 100ms linear;  /* Opera 10.50Ð12.00 */
+    transition: 100ms linear;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+}
+
+.md-notice {
+    font-family:arial;
+    font-size:11px;
+    line-height:normal;
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    color:#555;
+    display:block;
+    width:180px;
+    padding:5px;
+    border:1px solid #eee;
+    text-align:center;
+    margin:10px 0;
+}
