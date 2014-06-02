@@ -312,60 +312,21 @@ class Movie_Discovery {
 			'src' => 'movie-discovery',
 			'keywords' => '',
 			'id' => '',
-			'aid' => ''
+			'aid' => '',
+			'lang' => 'en'
 		), $atts, 'bartag' ) );
 		
 		$keywords = str_replace(',', '|', $keywords);
-            
-		if(strpos($_SERVER["SERVER_NAME"], '127.0.0.1') !== false ) { // dev
-			$url = 'http://127.0.0.1:8080/_movie-discovery.com/api';
+	
+		if($keywords) {
+			$return = '<iframe src="http://www.movie-discovery.com/api/movie.php?k='.$keywords.'&aid='.$aid.'&lang='.$lang.'" height="310" scrolling="no" marginheight="0" marginwidth="0" frameborder="0"></iframe>';			
 		}
-		else { // prod
-			$url = 'http://www.movie-discovery.com/api';
-		}
-		
+	
 		if(is_numeric($id)) {
-			$data = file_get_contents($url . '/get-movie.php?id=' . $id);
-		}
-		else { // => keyword search
-			$data = file_get_contents($url . '/get-movie.php?k=' . $keywords);
-		}
-
-		$data = json_decode($data);
-		
-		if(!empty($data)) {
-			
-			$movie = $data[0];
-			
-			//$return_test = '<div class="movie-discovery"><span class="md-headline">Watch related movie:</span><div class="md-content"><span class="md-title">'.$movie->title.'</span><span class="md-desc">'.$movie->metadesc.'</span><span class="md-price-rent">Price Rent: '.$movie->priceRent.'</span><span class="md-price-buy">Price Buy: '.$movie->priceBuy.'</span></div></div>';
-			
-			$return = '<div class="movie-discovery"><div class="md-inner">
-			<span class="md-headline">Watch related movie:</span>
-			<div class="md-content">
-				<span class="md-poster-image"><img src="'.$movie->image.'" alt="'.$movie->title.'" title="'.$movie->title.'"/></span>
-				<div class="md-overlay" style="opacity:0;">
-				<span class="md-overlay-inner">
-					<h2 class="md-title">'.$movie->title.'</h2>
-					<p class="md-desc">'.$movie->metadesc.'</p>
-					<div class="md-buy">
-						<span class="md-buy-now-title">Buy now:</span>
-						<span class="md-price-rent">Rent: '.$movie->priceRent.'</span>
-						<span class="md-price-buy">Buy: '.$movie->priceBuy.'</span>
-					</div>
-					<a href="http://www.movie-discovery.com/index.php?option=com_content&view=article&id='.$movie->id.'&a_aid='.$aid.'" class="md-btn md-trans" target="_blank">Click here</a>
-				</span>
-				<span class="md-powered-by"><a href="http://www.movie-discovery.com" target="_blank">www.movie-discovery.com</a></span>
-				</div>
-				<span class="md-title">'.$movie->title.'</span>
-			</div></div></div>';
-			
-			return $return;
-		
-		}
-		else {
-			return '<span class="md-notice">Sorry no movie has matched your criteria<br /><br /><span class="md-powered-by"><a href="http://www.movie-discovery.com" target="_blank">www.movie-discovery.com</a></span></span>';
+			$return = '<iframe src="http://www.movie-discovery.com/api/movie.php?id='.$id.'&aid='.$aid.'&lang='.$lang.'" height="310" scrolling="no" marginheight="0" marginwidth="0" frameborder="0"></iframe>';			
 		}
 		
+		return $return;
 
 	}
 
