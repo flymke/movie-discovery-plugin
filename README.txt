@@ -13,8 +13,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Movie Discovery is a system that helps website owners offer their users professional, award winning movies on topics related to the websitesÕ articles and blog posts.
 It also helps filmmakers reach their audiences and monetize their content.
 
-This plugin gathers movies by keywords set up on your website.
-The movie that fits best those keywords will be presented as poster with a link to buy or rent the movie.
+This plugin gathers movies by keywords that you have set up on your website.
+The movie that fits best will be presented as a poster with a link to buy or rent that movie.
+
+After somebody has bought a movie, you will receive affiliate money.
+You affiliate account can be reviewed at http://pap.movie-discovery.com.
 
 = Features =
 
@@ -26,6 +29,24 @@ The movie that fits best those keywords will be presented as poster with a link 
 * English
 * German
 * Hebrew
+
+The plugin will automatically adjust the language that you have set up within WordPress.
+This is for example the language that you have set up in your wp-config.php file.
+
+You can override this setting by providing a lang="en", or lang="en" attribute in your shortcode, e.g.
+[md id="homebirth|baby" lang="en"]
+
+More languages will be released soon.
+
+== Usage ==
+
+1. Sign up for a affiliate ID on http://pap.movie-discovery.com
+2. Activate the plugin (see Installation below)
+3. Update your affiliate id within the plugin settings (Settings -> Movie Discovery)
+4. Use following shortcode to embed movies:
+
+* Embed a movie by keywords: [md keywords="homebirth|baby"]
+* Embed a movie by a certain movie id: [md id="11"]
 
 == Installation ==
 
