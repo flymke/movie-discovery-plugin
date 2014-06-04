@@ -1,5 +1,5 @@
 === Movie Discovery ===
-Contributors: flymke
+Contributors: flymke, moviediscovery
 Donate link: -
 Tags: movie, movies, movie discovery, filmdiy, indie movies, related movies
 Requires at least: 3.7
