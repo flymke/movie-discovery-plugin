@@ -1,15 +1,12 @@
 <?php
 /**
- * Represents the view for the public-facing component of the plugin.
+ * Public Facing Component
  *
- * This typically includes any information, if any, that is rendered to the
- * frontend of the theme when the plugin is activated.
- *
- * @package   Plugin_Name
- * @author    Your Name <email@example.com>
+ * @package   Movie_Discovery
+ * @author    Michael Schoenrock <hello@michaelschoenrock.com>
  * @license   GPL-2.0+
- * @link      http://example.com
- * @copyright 2013 Your Name or Company Name
+ * @link      https://github.com/flymke/movie-discovery-plugin
+ * @copyright 2014 Michael Schoenrock
  */
 ?>
 

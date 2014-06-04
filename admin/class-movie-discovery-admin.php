@@ -1,6 +1,6 @@
 <?php
 /**
- * Movie Discovery
+ * Movie Discovery Admin Class
  *
  * @package   Movie_Discovery
  * @author    Mike Schoenrock <info@aliquit.de>
@@ -9,16 +9,6 @@
  * @copyright 2014 aliquit labs
  */
 
-/**
- * Plugin class. This class should ideally be used to work with the
- * administrative side of the WordPress site.
- *
- * If you're interested in introducing public-facing
- * functionality, then refer to `class-plugin-name.php`
- *
- * @package Plugin_Name_Admin
- * @author  Your Name <email@example.com>
- */
 class Movie_Discovery_Admin {
 
 	/**

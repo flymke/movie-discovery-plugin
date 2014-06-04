@@ -1,24 +1,14 @@
 <?php
 /**
- * Movie Discovery
+ * Movie Discovery Plugin Class
  *
  * @package   Movie_Discovery
- * @author    Mike Schoenrock <info@aliquit.de>
+ * @author    Michael Schoenrock <hello@michaelschoenrock.com>
  * @license   GPL-2.0+
- * @link      http://www.movie-discovery.com
- * @copyright 2014 aliquit labs
+ * @link      https://github.com/flymke/movie-discovery-plugin
+ * @copyright 2014 Michael Schoenrock
  */
 
-/**
- * Plugin class. This class should ideally be used to work with the
- * public-facing side of the WordPress site.
- *
- * If you're interested in introducing administrative or dashboard
- * functionality, then refer to `class-plugin-name-admin.php`
- *
- * @package Movie_Discovery
- * @author  Your Name <email@example.com>
- */
 class Movie_Discovery {
 	
 	/**
