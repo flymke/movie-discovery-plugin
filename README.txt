@@ -10,7 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Movie Discovery is a system that helps website owners offer their users professional, award winning movies on topics related to the websites’ articles and blog posts.
+Movie Discovery is a system that helps website owners offer their users professional, award winning movies on topics related to the websites articles and blog posts.
 It also helps filmmakers reach their audiences and monetize their content.
 
 This plugin gathers movies by keywords that you have set up on your website.
