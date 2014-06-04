@@ -1,15 +1,14 @@
 <?php
 /**
- * Represents the view for the administration dashboard.
+ * View for the administration dashboard.
  *
- * This includes the header, options, and other information that should provide
- * The User Interface to the end user.
+ * Movie Discovery
  *
- * @package   Plugin_Name
- * @author    Your Name <email@example.com>
+ * @package   Movie_Discovery
+ * @author    Michael Schoenrock <hello@michaelschoenrock.com>
  * @license   GPL-2.0+
- * @link      http://example.com
- * @copyright 2013 Your Name or Company Name
+ * @link      https://github.com/flymke/movie-discovery-plugin
+ * @copyright 2014 Michael Schoenrock
  */
 ?>
 

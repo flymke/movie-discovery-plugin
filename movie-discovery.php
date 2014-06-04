@@ -4,16 +4,16 @@
  *
  * This plugin lets you put movies by keywords on your blog.
  *
- * @package   Movie Discovery
+ * @package   Movie_Discovery
  * @author    Mike Schoenrock <info@aliquit.de>
  * @license   GPL-2.0+
- * @link      http://example.com
+ * @link      https://github.com/flymke/movie-discovery-plugin
  * @copyright 2014 aliquit labs
  *
  * @wordpress-plugin
  * Plugin Name:       Movie Discovery
  * Plugin URI:        http://www.movie-discovery.com/wp-plugin
- * Description:       This plugin lets you put movies by keywords on your blog 
+ * Description:       This plugin gathers movies by keywords that you have set up on your website. The movie that fits best will be presented as a poster with a link to buy or rent that movie.
  * Version:           1.0.0
  * Author:            Mike Schoenrock / Yoram Schaffer
  * Author URI:        http://www.aliquit.de
@@ -21,9 +21,9 @@
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Domain Path:       /languages
- * GitHub Plugin URI: -
+ * GitHub Plugin URI: https://github.com/flymke/movie-discovery-plugin
  */
-
+ 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
 	die;
