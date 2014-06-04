@@ -13,16 +13,16 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Movie Discovery is a system that helps website owners offer their users professional, award winning movies on topics related to the websites articles and blog posts.
 It also helps filmmakers reach their audiences and monetize their content.
 
-This plugin gathers movies by keywords that you have set up on your website.
-The movie that fits best will be presented as a poster with a link to buy or rent that movie.
+This plugin gathers movies by keywords that you have set up on your website/blog.
+The movie that fits best will be presented to the user as a poster with a link to buy or rent that movie.
 
-After somebody has bought a movie, you will receive affiliate money.
+After a user had bought a movie by following the link in your website, you will receive affiliate commission.
 You affiliate account can be reviewed at http://pap.movie-discovery.com.
 
 = Features =
 
-* Embed movies by keyword on your website
-* Embed movies by id on your website
+* Let the plugin choose movies to be presented on your website according to keywords in your posts/articles.
+* Choose manually specific movies by entering their id's in the plugin shortcode.
 
 = Languages =
 
