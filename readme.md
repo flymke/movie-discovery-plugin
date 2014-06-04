@@ -16,15 +16,25 @@ You affiliate account can be reviewed at http://pap.movie-discovery.com.
 3. Update your affiliate id within the plugin settings (Settings -> Movie Discovery)
 4. Use following shortcode to embed movies:
 
-* Embed a movie by keywords: [md keywords="homebirth|baby"]
-* Embed a movie by a certain movie id: [md id="11"]
+#### Embed a movie by keywords:
+
+```
+[md keywords="homebirth|baby"]
+```
+
+#### Embed a movie by a certain movie id:
+
+```
+[md id="11"]
+```
 
 ### Demo
 
 Demo Sites using the plugin can be found here:
 
-http://demo.movie-discovery.com/
-http://c.aliquit.de/my-movie-page/
+[http://demo.movie-discovery.com/](http://demo.movie-discovery.com/)
+
+[http://c.aliquit.de/my-movie-page/](http://c.aliquit.de/my-movie-page/)
 
 ### Installation
 
