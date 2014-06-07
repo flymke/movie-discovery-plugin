@@ -1,7 +1,7 @@
 === Movie Discovery ===
 Contributors: flymke, moviediscovery
 Donate link: -
-Tags: movie, movies, movie discovery, filmdiy, indie movies, related movies
+Tags: movie, movies, movie discovery, filmdiy, indie movies, related movies, textual recommendation,
 Requires at least: 3.7
 Tested up to: 3.9
 Stable tag: 1.0.0
