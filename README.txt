@@ -16,13 +16,13 @@ It also helps filmmakers reach their audiences and monetize their content.
 This plugin gathers movies by keywords that you have set up on your website.
 The movie that fits best will be presented as a poster with a link to buy or rent that movie.
 
-After somebody has bought a movie, you will receive affiliate money.
+After a user has bought a movie, you will receive affiliate commission.
 You affiliate account can be reviewed at http://pap.movie-discovery.com.
 
 = Features =
 
-* Embed movies by keyword on your website
-* Embed movies by id on your website
+* Present movies by keyword on your website (let the engine choose for you - recommended)
+* Present movies by id on your website (choose them manually)
 
 = Languages =
 
