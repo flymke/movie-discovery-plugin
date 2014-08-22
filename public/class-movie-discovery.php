@@ -295,14 +295,18 @@ class Movie_Discovery {
 		// @TODO: Define your filter hook callback here
 	}
 	
+	//update_option( $option_name, $new_value );
+	
 	/* Shortcode */
 	public function md_func( $atts, $content="" ) {
+		
+		$md_aid = get_option( 'md_aid' );
 		
 		extract( shortcode_atts( array(
 			'src' => 'movie-discovery',
 			'keywords' => '',
 			'id' => '',
-			'aid' => '',
+			'aid' => $md_aid,
 			'lang' => 'en'
 		), $atts, 'bartag' ) );
 		

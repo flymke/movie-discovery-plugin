@@ -74,9 +74,9 @@ class Movie_Discovery_Admin {
                 
                 //add_action( 'add_meta_boxes', array( $this, 'myplugin_add_custom_box') );
                 
-                //add_filter('mce_buttons', array( $this, 'myplugin_register_buttons' ) );
+                add_filter('mce_buttons', array( $this, 'myplugin_register_buttons' ) );
                 // Load the TinyMCE plugin : editor_plugin.js (wp2.5)
-                //add_filter('mce_external_plugins', array( $this, 'myplugin_register_tinymce_javascript' ) );
+                add_filter('mce_external_plugins', array( $this, 'myplugin_register_tinymce_javascript' ) );
 
 	}
 

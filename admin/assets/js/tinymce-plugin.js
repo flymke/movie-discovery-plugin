@@ -7,12 +7,11 @@
 				onclick : function() {
                                     var cmsURL = window.location.toString();
                                     //alert(url.substring(0, url.length -2) );
-                                    //=http://127.0.0.1:8080/_mymoviepage/wp-content/plugins/movie-discovery/admin/assets/
                                     ed.windowManager.open({
                                             file : url.substring(0, url.length -2) + "../views/movie_selector.php",
-                                            title : 'Movie Selector',
-                                            width : 420,  // Your dimensions may differ - toy around with them!
-                                            height : 400,
+                                            title : 'Movie Discovery | Movie Selector',
+                                            width : 620,  // Your dimensions may differ - toy around with them!
+                                            height : 380,
                                             resizable : "yes",
                                             inline : "yes",  // This parameter only has an effect if you use the inlinepopups plugin!
                                             close_previous : "no"
@@ -33,6 +32,10 @@
 				infourl : 'http://brettterpstra.com/',
 				version : "1.0"
 			};
+		},
+		mceInsertMdContent: function() {
+			alert ("test");
+			return 'test';
 		}
 	});
 	tinymce.PluginManager.add('Movie_Discovery', tinymce.plugins.Movie_Discovery);
