@@ -38,13 +38,6 @@ class Movie_Discovery_Admin {
 	private function __construct() {
 
 		/*
-		 * - Uncomment following lines if the admin class should only be available for super admins
-		 */
-		/* if( ! is_super_admin() ) {
-			return;
-		} */
-
-		/*
 		 * Call $plugin_slug from public plugin class.
 		 *
     		 *
@@ -62,15 +55,6 @@ class Movie_Discovery_Admin {
 		// Add an action link pointing to the options page.
 		$plugin_basename = plugin_basename( plugin_dir_path( __DIR__ ) . $this->plugin_slug . '.php' );
 		add_filter( 'plugin_action_links_' . $plugin_basename, array( $this, 'add_action_links' ) );
-
-		/*
-		 * Define custom functionality.
-		 *
-		 * Read more about actions and filters:
-		 * http://codex.wordpress.org/Plugin_API#Hooks.2C_Actions_and_Filters
-		 */
-		//add_action( '@TODO', array( $this, 'action_method_name' ) );
-		//add_filter( '@TODO', array( $this, 'filter_method_name' ) );
                 
                 //add_action( 'add_meta_boxes', array( $this, 'myplugin_add_custom_box') );
                 
@@ -88,13 +72,6 @@ class Movie_Discovery_Admin {
 	 * @return    object    A single instance of this class.
 	 */
 	public static function get_instance() {
-
-		/*
-		 * - Uncomment following lines if the admin class should only be available for super admins
-		 */
-		/* if( ! is_super_admin() ) {
-			return;
-		} */
 
 		// If the single instance hasn't been set, set it now.
 		if ( null == self::$instance ) {
@@ -154,19 +131,9 @@ class Movie_Discovery_Admin {
 	public function add_plugin_admin_menu() {
 
 		/*
-		 * Add a settings page for this plugin to the Settings menu.
+		 * Settings page for this plugin to the Settings menu.
 		 *
-		 * NOTE:  Alternative menu locations are available via WordPress administration menu functions.
-		 *
-		 *        Administration Menus: http://codex.wordpress.org/Administration_Menus
-		 *
-		 * @TODO:
-		 *
-		 * - Change 'Page Title' to the title of your plugin admin page
-		 * - Change 'Menu Text' to the text for menu item for the plugin settings page
-		 * - Change 'manage_options' to the capability you see fit
-		 *   For reference: http://codex.wordpress.org/Roles_and_Capabilities
-		 */
+                 */
 		$this->plugin_screen_hook_suffix = add_options_page(
 			__( 'Movie Discovery Settings', $this->plugin_slug ),
 			__( 'Movie Discovery', $this->plugin_slug ),
@@ -212,7 +179,6 @@ class Movie_Discovery_Admin {
 	 * @since    1.0.0
 	 */
 	public function action_method_name() {
-		// @TODO: Define your action hook callback here
 	}
 
 	/**
@@ -225,51 +191,6 @@ class Movie_Discovery_Admin {
 	 * @since    1.0.0
 	 */
 	public function filter_method_name() {
-		// @TODO: Define your filter hook callback here
-	}
-        
-        // http://codex.wordpress.org/Function_Reference/add_meta_box
-        
-        /**
-        * Adds a box to the main column on the Post and Page edit screens.
-        */
-        public function myplugin_add_custom_box() {
-       
-           $screens = array( 'post', 'page' );
-       
-           foreach ( $screens as $screen ) {
-       
-               add_meta_box(
-                   'some_meta_box_name',
-                   __( 'Movie Discovery', 'myplugin_textdomain' ),
-                   array( $this, 'render_meta_box_content' ),
-                   $screen,
-                   'side'
-               );
-           }
-        }
-        
-	/**
-	 * Render Meta Box content.
-	 *
-	 * @param WP_Post $post The post object.
-	 */
-	public function render_meta_box_content( $post ) {
-	
-		// Add an nonce field so we can check for it later.
-		wp_nonce_field( 'myplugin_inner_custom_box', 'myplugin_inner_custom_box_nonce' );
-
-		// Use get_post_meta to retrieve an existing value from the database.
-		$value = get_post_meta( $post->ID, '_my_meta_value_key', true );
-
-		// Display the form, using the current value.
-                echo '<img src="' . plugins_url( 'assets/img/md-logo_270.png' , __FILE__ ) . '" style="width:257px;margin-bottom:5px;border:1px solid #eee;" /> ';
-                //echo '<em>More to come here... (for example)</em><br /><br /></em>';
-		//echo '<label for="myplugin_new_field">';
-		//_e( 'Keyword search for available movies:', 'myplugin_textdomain' );
-		//echo '</label> ';
-		//echo '<input type="text" id="myplugin_new_field" name="myplugin_new_field"';
-                //echo ' value="' . esc_attr( $value ) . '" size="25" />';
 	}
         
         public function myplugin_register_buttons($buttons) {

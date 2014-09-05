@@ -1,3 +1,16 @@
+<?php
+/**
+ * Movie Selector Popup
+ *
+ * Movie Discovery
+ *
+ * @package   Movie_Discovery
+ * @author    Michael Schoenrock <hello@michaelschoenrock.com>
+ * @license   GPL-2.0+
+ * @link      https://github.com/flymke/movie-discovery-plugin
+ * @copyright 2014 Michael Schoenrock
+ */
+?>
 <html>
     <head>
     <style>
@@ -16,10 +29,12 @@
            border:1px solid #ccc;
            height:30px;
            line-height:30px;
+           margin-left:0;
         }
         
         select {
-           height:30px;            
+           height:30px;
+           margin-left:0;
         }
         
         label {
@@ -45,8 +60,7 @@
         
         form small {
             display: block;
-            font-size: 12px;
-            font-style: italic;
+            font-size: 11px;
             margin-top: 3px;
             padding: 0 0px;
             width: 90%;
@@ -104,6 +118,7 @@
             position:absolute;
             bottom:30px;
             right:18px;
+            font-size:13px;
         }
 
     </style>
@@ -112,11 +127,11 @@
 <form>
     
     <div>
-        <label for="md_provider">Select provider:</label>
+        <label for="md_provider">Select a provider:</label>
         <select name="md_provider">
             <option value="md">Movie Discovery</option>
         </select>
-        <small>Select a movie provider.</small>
+        <small>Select a movie provider.<br />We provide only Movie Discovery at the moment.</small>
     </div>
     
     <div>

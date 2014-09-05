@@ -1,7 +1,7 @@
 === Movie Discovery ===
 Contributors: flymke, moviediscovery
 Donate link: -
-Tags: movie, movies, movie discovery, filmdiy, indie movies, related movies, contextual recommendation,
+Tags: movie, movies, movie discovery, filmdiy, indie movies, related movies, contextual recommendation
 Requires at least: 3.7
 Tested up to: 3.9
 Stable tag: 1.0.0
@@ -17,7 +17,7 @@ This plugin gathers movies by keywords that you have set up on your website/blog
 The movie that fits best will be presented to the user as a poster with a link to buy or rent that movie.
 
 After a user had bought a movie by following the link in your website, you will receive affiliate commission.
-You affiliate account can be reviewed at http://pap.movie-discovery.com.
+You affiliate account can be set up and reviewed at http://pap.movie-discovery.com.
 
 = Features =
 
@@ -27,7 +27,6 @@ You affiliate account can be reviewed at http://pap.movie-discovery.com.
 = Languages =
 
 * English
-* German
 * Hebrew
 
 The plugin will automatically adjust the language that you have set up within WordPress.
@@ -43,7 +42,7 @@ More languages will be released soon.
 1. Sign up for a affiliate ID on http://pap.movie-discovery.com
 2. Activate the plugin (see Installation below)
 3. Update your affiliate id within the plugin settings (Settings -> Movie Discovery)
-4. Use following shortcode to embed movies:
+4. Use following shortcode or use the TinyMCE Button to embed movies.
 
 * Embed a movie by keywords: [md keywords="homebirth|baby"]
 * Embed a movie by a certain movie id: [md id="11"]
