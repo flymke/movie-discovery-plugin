@@ -63,14 +63,6 @@ class Movie_Discovery {
 		
 		add_shortcode( 'md', array( $this, 'md_func' ) );
 		//add_filter('the_content',  array( $this, 'do_shortcode' ) );
-		
-		/* Define custom functionality.
-		 * Refer To http://codex.wordpress.org/Plugin_API#Hooks.2C_Actions_and_Filters
-		 */
-		//add_action( '@TODO', array( $this, 'action_method_name' ) );
-		//add_filter( '@TODO', array( $this, 'filter_method_name' ) );
-		
-
 
 	}
 
@@ -225,7 +217,6 @@ class Movie_Discovery {
 	 * @since    1.0.0
 	 */
 	private static function single_activate() {
-		// @TODO: Define activation functionality here
 	}
 
 	/**
@@ -234,7 +225,6 @@ class Movie_Discovery {
 	 * @since    1.0.0
 	 */
 	private static function single_deactivate() {
-		// @TODO: Define deactivation functionality here
 	}
 
 	/**
@@ -292,28 +282,33 @@ class Movie_Discovery {
 	 * @since    1.0.0
 	 */
 	public function filter_method_name() {
-		// @TODO: Define your filter hook callback here
 	}
 	
 	/* Shortcode */
 	public function md_func( $atts, $content="" ) {
 		
+		$md_aid = get_option( 'md_aid' );
+		if(!$md_aid) $md_aid = '';
+	
+		$md_lang = get_option( 'md_lang' );
+		if(!$md_lang) $md_lang = 'en';
+		
 		extract( shortcode_atts( array(
 			'src' => 'movie-discovery',
 			'keywords' => '',
 			'id' => '',
-			'aid' => '',
+			'aid' => $md_aid,
 			'lang' => 'en'
 		), $atts, 'bartag' ) );
 		
 		$keywords = str_replace(',', '|', $keywords);
 	
 		if($keywords) {
-			$return = '<iframe src="http://www.movie-discovery.com/api/movie.php?k='.$keywords.'&aid='.$aid.'&lang='.$lang.'" height="310" scrolling="no" marginheight="0" marginwidth="0" frameborder="0"></iframe>';			
+			$return = '<iframe src="http://www.movie-discovery.com/api/movie.php?k='.$keywords.'&aid='.$aid.'&lang='.$md_lang.'" height="310" scrolling="no" marginheight="0" marginwidth="0" frameborder="0"></iframe>';			
 		}
 	
 		if(is_numeric($id)) {
-			$return = '<iframe src="http://www.movie-discovery.com/api/movie.php?id='.$id.'&aid='.$aid.'&lang='.$lang.'" height="310" scrolling="no" marginheight="0" marginwidth="0" frameborder="0"></iframe>';			
+			$return = '<iframe src="http://www.movie-discovery.com/api/movie.php?id='.$id.'&aid='.$aid.'&lang='.$md_lang.'" height="310" scrolling="no" marginheight="0" marginwidth="0" frameborder="0"></iframe>';			
 		}
 		
 		return $return;

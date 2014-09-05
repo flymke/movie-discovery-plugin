@@ -1,1 +1,15 @@
 /* Admin option form */
+
+.md_admin_form {
+    margin-top:2em;
+}
+
+.md_admin_form>div {
+    margin-bottom:1em;
+}
+
+.md_admin_form label {
+    display:inline-block;
+    margin-right:1em;
+    width:150px;
+}

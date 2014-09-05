@@ -1,7 +1,11 @@
 === Movie Discovery ===
-Contributors: flymke
+Contributors: flymke, moviediscovery
 Donate link: -
+<<<<<<< HEAD
 Tags: movie, movies, movie discovery, filmdiy, indie movies, related movies, contextual recommendation,
+=======
+Tags: movie, movies, movie discovery, filmdiy, indie movies, related movies, contextual recommendation
+>>>>>>> dev
 Requires at least: 3.7
 Tested up to: 3.9
 Stable tag: 1.0.0
@@ -13,9 +17,10 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Movie Discovery is a system that helps website owners offer their users professional, award winning movies on topics related to the websites articles and blog posts.
 It also helps filmmakers reach their audiences and monetize their content.
 
-This plugin gathers movies by keywords that you have set up on your website.
-The movie that fits best will be presented as a poster with a link to buy or rent that movie.
+This plugin gathers movies by keywords that you have set up on your website/blog.
+The movie that fits best will be presented to the user as a poster with a link to buy or rent that movie.
 
+<<<<<<< HEAD
 After a user has bought a movie, you will receive affiliate commission.
 You affiliate account can be reviewed at http://pap.movie-discovery.com.
 
@@ -23,11 +28,19 @@ You affiliate account can be reviewed at http://pap.movie-discovery.com.
 
 * Present movies by keyword on your website (let the engine choose for you - recommended)
 * Present movies by id on your website (choose them manually)
+=======
+After a user had bought a movie by following the link in your website, you will receive affiliate commission.
+You affiliate account can be set up and reviewed at http://pap.movie-discovery.com.
+
+= Features =
+
+* Let the plugin choose movies to be presented on your website according to keywords in your posts/articles.
+* Choose manually specific movies by entering their id's in the plugin shortcode.
+>>>>>>> dev
 
 = Languages =
 
 * English
-* German
 * Hebrew
 
 The plugin will automatically adjust the language that you have set up within WordPress.
@@ -43,7 +56,7 @@ More languages will be released soon.
 1. Sign up for a affiliate ID on http://pap.movie-discovery.com
 2. Activate the plugin (see Installation below)
 3. Update your affiliate id within the plugin settings (Settings -> Movie Discovery)
-4. Use following shortcode to embed movies:
+4. Use following shortcode or use the TinyMCE Button to embed movies.
 
 * Embed a movie by keywords: [md keywords="homebirth|baby"]
 * Embed a movie by a certain movie id: [md id="11"]
