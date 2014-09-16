@@ -14,7 +14,7 @@
  * Plugin Name:       Movie Discovery
  * Plugin URI:        http://www.movie-discovery.com/wp-plugin
  * Description:       This plugin gathers movies by keywords that you have set up on your website. The movie that fits best will be presented as a poster with a link to buy or rent that movie.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Mike Schoenrock, Yoram Schaffer
  * Author URI:        http://www.aliquit.de
  * Text Domain:       movie-discovery
@@ -39,7 +39,7 @@ if ( ! defined( 'WPINC' ) ) {
  *
  */
 if ( ! defined( 'WP_MOVIE_DISCOVERY_VERSION' ) ) {
-	define( 'WP_MOVIE_DISCOVERY_VERSION', '1.0.0' );
+	define( 'WP_MOVIE_DISCOVERY_VERSION', '1.0.1' );
 }
 
 /*
