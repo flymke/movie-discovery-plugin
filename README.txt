@@ -7,8 +7,8 @@ Tags: movie, movies, movie discovery, filmdiy, indie movies, related movies, con
 Tags: movie, movies, movie discovery, filmdiy, indie movies, related movies, contextual recommendation
 >>>>>>> dev
 Requires at least: 3.7
-Tested up to: 3.9
-Stable tag: 1.0.0
+Tested up to: 4.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -92,7 +92,16 @@ If you find an issue, please [raise an issue](https://github.com/flymke/movie-di
 
 Nothing to ask here yet.
 
+== Screenshots ==
+
+1. Using the editor button
+2. Shows the window to insert movies
+3. Using the shortcode to insert movies (Note: the parameter aid is optional)
+
 == Changelog ==
+
+= 1.0.1 =
+* Added screenshots, minor adjustments
 
 = 1.0.0 =
 * First release
