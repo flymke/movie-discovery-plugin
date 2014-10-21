@@ -15,13 +15,15 @@
 <?php
 
 if(ISSET($_GET['k'])) {
-    $k = trim(strip_tags($_GET['k']));
-    $result = file_get_contents('http://www.movie-discovery.com/api/wp-get-movie-json.php?k=' . $k);
+    $k = trim(strip_tags($_GET['k'])); // keyword
+    $p = trim(strip_tags($_GET['p'])); // provider
+    $result = file_get_contents('http://www.movie-discovery.com/api/wp-get-movie-json.php?k=' . $k . '&p=' . $p);
 }
 
 if(ISSET($_GET['m'])) {
-    $m = trim(strip_tags($_GET['m']));
-    $result = file_get_contents('http://www.movie-discovery.com/api/wp-get-movie-json.php?m=' . $m);
+    $m = trim(strip_tags($_GET['m'])); // movie
+    $p = trim(strip_tags($_GET['p'])); // provider
+    $result = file_get_contents('http://www.movie-discovery.com/api/wp-get-movie-json.php?m=' . $m . '&p=' . $p);
 }
 
 echo $result;

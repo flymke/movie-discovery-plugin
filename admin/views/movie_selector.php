@@ -128,8 +128,11 @@
     
     <div>
         <label for="md_provider">Select a provider:</label>
-        <select name="md_provider">
+        <select class="md_provider" name="md_provider">
+            <option value="all">All</option>
+            <option value="">---</option>
             <option value="md">Movie Discovery</option>
+            <option value="supermovies">Super Movies</option>
         </select>
         <small>Select a movie provider.<br />We provide only Movie Discovery at the moment.</small>
     </div>
@@ -165,12 +168,15 @@
                 var that = this,
                 value = $(this).val();
                 
+                var provider = $('.md_provider').val();
+                
                 if ( value.length >= minlength ) {
                     value = value.replace(",", "|");
                     value = value.replace(".", "|");
                     value = value.replace(/ /g,''); // replace all spaces
+                    
                     $('.md_results').fadeIn();
-                    $.getJSON( "ajax_data.php?k=" + value, function( data ) {
+                    $.getJSON( "ajax_data.php?k=" + value + "&p=" + provider, function( data ) {
                         
                         var list = '';
                         $.each( data, function( key, val ) {
@@ -179,7 +185,6 @@
                             
                         $('.md_results').html('<h3>Possible movies that could match your keywords are:</h3><ul>' + list + '</ul>');
                         
-                    
                     });
                 }
                 
@@ -194,12 +199,14 @@
                 var that = this,
                 value = $(this).val();
                 
+                var provider = $('.md_provider').val();
+                
                 if ( value.length >= minlength ) {
                     value = value.replace(",", "|");
                     value = value.replace(".", "|");
                     value = value.replace(/ /g,''); // replace all spaces
                     $('.md_results').fadeIn();
-                    $.getJSON( "ajax_data.php?m=" + value, function( data ) {
+                    $.getJSON( "ajax_data.php?m=" + value + "&p=" + provider, function( data ) {
                         
                         var list = '';
                         $.each( data, function( key, val ) {
@@ -235,11 +242,11 @@
                     alert('Please enter either keywords or a movie.');
                 }
                 else {
-                
-                    var aid = '12345';
+                        
+                    var provider = $('.md_provider').val();
                     
                     if (keywords.length > 0 ) {
-                        var mdShortcodeContent = '[md src="movie-discovery" keywords="'+ keywords +'"]';
+                        var mdShortcodeContent = '[md src="'+ provider +'" keywords="'+ keywords +'"]';
                     } 
                     if (movie.length > 0 ) {
                         var md_id = $('select#md_movie_select option:selected').val();
