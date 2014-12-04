@@ -304,11 +304,11 @@ class Movie_Discovery {
 		$keywords = str_replace(',', '|', $keywords);
 	
 		if($keywords) {
-			$return = '<iframe src="http://www.movie-discovery.com/api/movie.php?k='.$keywords.'&aid='.$aid.'&lang='.$md_lang.'" height="310" scrolling="no" marginheight="0" marginwidth="0" frameborder="0"></iframe>';			
+			$return = '<iframe src="http://www.movie-discovery.com/api/movie.php?k='.$keywords.'&aid='.$aid.'&lang='.$md_lang.'&p='.$src.'" height="310" scrolling="no" marginheight="0" marginwidth="0" frameborder="0"></iframe>';			
 		}
 	
 		if(is_numeric($id)) {
-			$return = '<iframe src="http://www.movie-discovery.com/api/movie.php?id='.$id.'&aid='.$aid.'&lang='.$md_lang.'" height="310" scrolling="no" marginheight="0" marginwidth="0" frameborder="0"></iframe>';			
+			$return = '<iframe src="http://www.movie-discovery.com/api/movie.php?id='.$id.'&aid='.$aid.'&lang='.$md_lang.'&p='.$src.'" height="310" scrolling="no" marginheight="0" marginwidth="0" frameborder="0"></iframe>';			
 		}
 		
 		return $return;
