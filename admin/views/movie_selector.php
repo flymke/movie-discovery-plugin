@@ -250,7 +250,7 @@
                     } 
                     if (movie.length > 0 ) {
                         var md_id = $('select#md_movie_select option:selected').val();
-                        var mdShortcodeContent = '[md src="movie-discovery" id="'+ md_id +'"]';
+                        var mdShortcodeContent = '[md src="'+ provider +'" id="'+ md_id +'"]';
                     }
                     
                     parent.tinyMCE.activeEditor.insertContent(mdShortcodeContent, {format : 'raw'});
