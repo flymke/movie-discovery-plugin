@@ -133,6 +133,7 @@
             <option value="">---</option>
             <option value="md">Movie Discovery</option>
             <option value="supermovies">Super Movies</option>
+            <option value="israeli-movies">Israeli Movies</option>
         </select>
         <small>Select a movie provider.<br />We provide only Movie Discovery at the moment.</small>
     </div>
